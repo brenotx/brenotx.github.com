@@ -41,6 +41,7 @@
     <!--STYLES END-->
     
     
+    <link rel="stylesheet" href="/assets/css/search.css">
 </head>
 
     <body>
@@ -141,7 +142,7 @@
             <li class="sidebar-button">
                 
                     <a  class="sidebar-button-link st-search-show-outputs"
-                         href="#search"
+                         href="/search"
                         
                     >
                 
@@ -343,6 +344,15 @@
     </body>
     <!--SCRIPTS-->
 <script src="/assets/js/script-iq7yhbqlxnc8wvt28qyacokvggqtlqhahb6sgzocgxgbvwe7shblzmiebp1j.min.js"></script>
+<script src="/assets/js/search.js"></script> 
+<script type="text/javascript">      
+     var search_path = "search.xml";
+     if (search_path.length == 0) {
+        search_path = "search.xml";
+     }
+     var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
 <!--SCRIPTS END-->
 
     
